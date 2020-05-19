@@ -4,7 +4,7 @@
 ![npm-publish](https://github.com/tsdotnet/observable-timer/workflows/npm-publish/badge.svg)
 [![npm version](https://img.shields.io/npm/v/@tsdotnet/observable-timer.svg?style=flat-square)](https://www.npmjs.com/package/@tsdotnet/observable-timer)
 
-A simple observable timer that publishes on an interval.
+An observable timer class that publishes to its subscribers on every tick or specified interval.
 
 ## Docs
 
