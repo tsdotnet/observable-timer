@@ -53,11 +53,11 @@
     "typedoc": "^0.17.7",
     "typedoc-plugin-external-module-name": "^3.1.0",
     "typedoc-plugin-nojekyll": "^1.0.1",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.3"
   },
   "dependencies": {
     "@tsdotnet/exceptions": "^1.0.15",
-    "@tsdotnet/observable-base": "^1.0.5",
+    "@tsdotnet/observable-base": "^1.0.7",
     "tslib": "^2.0.0"
   }
 }
