@@ -1,6 +1,6 @@
 dependencies:
   '@tsdotnet/exceptions': 1.0.16
-  '@tsdotnet/observable-base': 1.0.9
+  '@tsdotnet/observable-base': 1.0.10
   tslib: 2.0.0
 devDependencies:
   '@types/chai': 4.2.11
@@ -225,12 +225,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7cPmEDQ0v/k3CHSnvMOYf9xLgWX96JIdMpDnonvIl3y/0sAexQDtRSKxLki2l/iBgsL/npGwLDBn/wmZGxz2Tg==
-  /@tsdotnet/disposable/1.1.16:
+  /@tsdotnet/disposable/1.1.19:
     dependencies:
       tslib: 2.0.0
     dev: false
     resolution:
-      integrity: sha512-Nk6c21Zs5dh8ZfSUCJf1M0ovwvPFPxAO/dqUgwRptch+Ruy27jswQuzrwZZewYA8atUBJYeWOobNH03ALWTpvA==
+      integrity: sha512-2DGtUvkiR1/h2mmES97BLb2zBgRaYQbUnk/YcYG5rmdKjHgZVKcPwd+exMZTxY5mLi4mQCbsS/BmSxEKqg2Uag==
   /@tsdotnet/exceptions/1.0.16:
     dependencies:
       tslib: 2.0.0
@@ -246,18 +246,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xZhIUFJ01CbKguJQOT6TlMmVZzYQKD2xkhjsOi69lCrus8IKPWz41i8qzWnXMX00MfAnt6R8Ib/5OMtyNeMkpQ==
-  /@tsdotnet/observable-base/1.0.9:
+  /@tsdotnet/observable-base/1.0.10:
     dependencies:
       '@tsdotnet/collection-base': 2.0.4
       '@tsdotnet/common-interfaces': 1.0.4
-      '@tsdotnet/disposable': 1.1.16
+      '@tsdotnet/disposable': 1.1.19
       '@tsdotnet/exceptions': 1.0.16
       '@tsdotnet/linked-node-list': 1.3.11
       '@tsdotnet/ordered-registry': 1.0.12
       tslib: 2.0.0
     dev: false
     resolution:
-      integrity: sha512-xqukUJhxpQrrXnmDH20e0kaELRMgu8yFyfJNx90VNRm1dykGcsRScm1eLwbpQQ3yXm4P3wDkITfVHP1aQehn9A==
+      integrity: sha512-msSWR3BYKn9Wure9RcQ3f/B/Nrv/0SJgYua/wT2RuGU7sPchnb7xtB+8mzGS7v82OZBbc/K00gqniz2YA33upg==
   /@tsdotnet/ordered-registry/1.0.12:
     dependencies:
       '@tsdotnet/collection-base': 2.0.4
@@ -3086,7 +3086,7 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   '@tsdotnet/exceptions': ^1.0.16
-  '@tsdotnet/observable-base': ^1.0.9
+  '@tsdotnet/observable-base': ^1.0.10
   '@types/chai': ^4.2.11
   '@types/mocha': ^7.0.2
   '@typescript-eslint/eslint-plugin': ^3.0.0
