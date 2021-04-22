@@ -3,7 +3,6 @@
  * @license MIT
  */
 
-
 import ArgumentException from '@tsdotnet/exceptions/dist/ArgumentException';
 import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullException';
 import ObservableBase from '@tsdotnet/observable-base/dist/ObservableBase';
