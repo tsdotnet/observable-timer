@@ -1,6 +1,6 @@
 dependencies:
   '@tsdotnet/exceptions': 1.0.17
-  '@tsdotnet/observable-base': 1.0.17
+  '@tsdotnet/observable-base': 1.0.18
   tslib: 2.2.0
 devDependencies:
   '@types/chai': 4.2.18
@@ -294,7 +294,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+xTpTdAy8+7F3k2KMjvds9UWpLbW+9Q6sLhOxfm7GvEsDKBugb9JYM5CoEKADOoR9+tLn8xT7qwTu+lcmnJ5LA==
-  /@tsdotnet/linked-node-list/1.3.16:
+  /@tsdotnet/linked-node-list/1.3.17:
     dependencies:
       '@tsdotnet/collection-base': 2.0.9
       '@tsdotnet/common-interfaces': 1.0.4
@@ -302,30 +302,30 @@ packages:
       tslib: 2.2.0
     dev: false
     resolution:
-      integrity: sha512-vqOYvisFmrPnCwHx+OiyvWU42m/Hxa40bWKZjubbEBbnzELzWJVHRla6rjYm2SoZ7+6LnPbOKFgMEZTpzIy/Cg==
-  /@tsdotnet/observable-base/1.0.17:
+      integrity: sha512-q1Dyun4OjUsp4KjUw1LAa44gRjc8qHf9HZAL1X7Y+lw1D4aXKb6kUyXl1rZTYYfALAuLJ8CmCk5Gq8zCf23gTQ==
+  /@tsdotnet/observable-base/1.0.18:
     dependencies:
       '@tsdotnet/collection-base': 2.0.9
       '@tsdotnet/common-interfaces': 1.0.4
       '@tsdotnet/disposable': 1.1.22
       '@tsdotnet/exceptions': 1.0.17
-      '@tsdotnet/linked-node-list': 1.3.16
-      '@tsdotnet/ordered-registry': 1.0.18
+      '@tsdotnet/linked-node-list': 1.3.17
+      '@tsdotnet/ordered-registry': 1.0.19
       tslib: 2.2.0
     dev: false
     resolution:
-      integrity: sha512-53d0jnBPRYiQ7ddHk2k8BCUBhXV8O668ZrQqg11Eyn2Jj1/c+iEOJpPNn/wQPkT9p4uTbWQ0tssxddGxCvvDMg==
-  /@tsdotnet/ordered-registry/1.0.18:
+      integrity: sha512-2IxP3NsdaZyoRUUkshoDdY4qjX2fZ+VXLc9AUVruvIKIKmfDwvMPruaTu20PKVMY0Slk4OlqCiCOnQCGtBGiVA==
+  /@tsdotnet/ordered-registry/1.0.19:
     dependencies:
       '@tsdotnet/collection-base': 2.0.9
       '@tsdotnet/common-interfaces': 1.0.4
       '@tsdotnet/compare': 1.3.17
       '@tsdotnet/exceptions': 1.0.17
-      '@tsdotnet/linked-node-list': 1.3.16
+      '@tsdotnet/linked-node-list': 1.3.17
       tslib: 2.2.0
     dev: false
     resolution:
-      integrity: sha512-rl+JXYAa5nRadCT9kvITuG271SYBG12aaAw2QGjb36uqChSjb0q0qiJ/LKgCuoGWk2uX39BVWEqYIVdcUazw9A==
+      integrity: sha512-Ridc5fOMTmyg0jd/Pzep+yFWnQs1GGUgqho4zwM5M6bRqin8z6JG0xHmSjni7RzAtZrwcMdOZcPF1G3/3pQXfg==
   /@tsdotnet/type/1.0.11:
     dependencies:
       '@tsdotnet/common-interfaces': 1.0.4
@@ -3259,7 +3259,7 @@ packages:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
   '@tsdotnet/exceptions': ^1.0.17
-  '@tsdotnet/observable-base': ^1.0.17
+  '@tsdotnet/observable-base': ^1.0.18
   '@types/chai': ^4.2.18
   '@types/mocha': ^8.2.2
   '@typescript-eslint/eslint-plugin': ^4.23.0
