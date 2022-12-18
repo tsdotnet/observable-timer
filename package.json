@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "@tsdotnet/exceptions": "^1.0.19",
-    "@tsdotnet/observable-base": "^1.0.20",
+    "@tsdotnet/observable-base": "^1.0.21",
     "tslib": "^2.4.1"
   }
 }
