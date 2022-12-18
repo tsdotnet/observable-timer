@@ -5,9 +5,9 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const ArgumentException_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/exceptions/dist/ArgumentException"));
-const ArgumentNullException_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/exceptions/dist/ArgumentNullException"));
-const ObservableBase_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/observable-base/dist/ObservableBase"));
+const ArgumentException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentException"));
+const ArgumentNullException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentNullException"));
+const ObservableBase_1 = tslib_1.__importDefault(require("@tsdotnet/observable-base/dist/ObservableBase"));
 /**
  * A timer class that uses an Observable pattern to allow for subscribing to ticks.
  */
