@@ -1,6 +1,6 @@
 {
   "name": "@tsdotnet/observable-timer",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "An observable timer class that publishes to its subscribers on every tick or specified interval.",
   "author": "electricessence",
   "license": "MIT",
