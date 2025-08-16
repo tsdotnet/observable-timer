@@ -1,14 +1,15 @@
+"use strict";
 /*!
  * @author electricessence / https://github.com/electricessence/
  * @license MIT
  */
-import ArgumentException from '@tsdotnet/exceptions/dist/ArgumentException';
-import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullException';
-import ObservableBase from '@tsdotnet/observable-base/dist/ObservableBase';
+Object.defineProperty(exports, "__esModule", { value: true });
+const exceptions_1 = require("@tsdotnet/exceptions");
+const observable_base_1 = require("@tsdotnet/observable-base");
 /**
  * A timer class that uses an Observable pattern to allow for subscribing to ticks.
  */
-export default class ObservableTimer extends ObservableBase {
+class ObservableTimer extends observable_base_1.ObservableBase {
     constructor(_interval, _maxCount = Infinity, _initialDelay = _interval) {
         super();
         this._interval = _interval;
@@ -16,9 +17,9 @@ export default class ObservableTimer extends ObservableBase {
         this._initialDelay = _initialDelay;
         this._count = 0;
         if (_interval == null)
-            throw new ArgumentNullException('interval', 'Must be a valid number.');
+            throw new exceptions_1.ArgumentNullException('interval', 'Must be a valid number.');
         if (_interval < 0)
-            throw new ArgumentException('interval', 'Cannot be negative.');
+            throw new exceptions_1.ArgumentException('interval', 'Cannot be negative.');
     }
     /**
      * Returns the number of times the timer has ticked (onNext);
@@ -124,4 +125,5 @@ export default class ObservableTimer extends ObservableBase {
         super._onDispose();
     }
 }
+exports.default = ObservableTimer;
 //# sourceMappingURL=ObservableTimer.js.map

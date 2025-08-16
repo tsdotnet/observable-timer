@@ -2,7 +2,7 @@
  * @author electricessence / https://github.com/electricessence/
  * @license MIT
  */
-import ObservableBase from '@tsdotnet/observable-base/dist/ObservableBase';
+import { ObservableBase } from '@tsdotnet/observable-base';
 /**
  * A timer class that uses an Observable pattern to allow for subscribing to ticks.
  */

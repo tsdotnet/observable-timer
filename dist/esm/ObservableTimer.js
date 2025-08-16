@@ -1,28 +1,28 @@
-"use strict";
 /*!
  * @author electricessence / https://github.com/electricessence/
  * @license MIT
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-const tslib_1 = require("tslib");
-const ArgumentException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentException"));
-const ArgumentNullException_1 = tslib_1.__importDefault(require("@tsdotnet/exceptions/dist/ArgumentNullException"));
-const ObservableBase_1 = tslib_1.__importDefault(require("@tsdotnet/observable-base/dist/ObservableBase"));
+import { ArgumentException, ArgumentNullException } from '@tsdotnet/exceptions';
+import { ObservableBase } from '@tsdotnet/observable-base';
 /**
  * A timer class that uses an Observable pattern to allow for subscribing to ticks.
  */
-class ObservableTimer extends ObservableBase_1.default {
+export default class ObservableTimer extends ObservableBase {
+    _interval;
+    _maxCount;
+    _initialDelay;
+    _cancel;
     constructor(_interval, _maxCount = Infinity, _initialDelay = _interval) {
         super();
         this._interval = _interval;
         this._maxCount = _maxCount;
         this._initialDelay = _initialDelay;
-        this._count = 0;
         if (_interval == null)
-            throw new ArgumentNullException_1.default('interval', 'Must be a valid number.');
+            throw new ArgumentNullException('interval', 'Must be a valid number.');
         if (_interval < 0)
-            throw new ArgumentException_1.default('interval', 'Cannot be negative.');
+            throw new ArgumentException('interval', 'Cannot be negative.');
     }
+    _count = 0;
     /**
      * Returns the number of times the timer has ticked (onNext);
      * @returns {number}
@@ -127,5 +127,4 @@ class ObservableTimer extends ObservableBase_1.default {
         super._onDispose();
     }
 }
-exports.default = ObservableTimer;
 //# sourceMappingURL=ObservableTimer.js.map

@@ -3,9 +3,8 @@
  * @license MIT
  */
 
-import ArgumentException from '@tsdotnet/exceptions/dist/ArgumentException';
-import ArgumentNullException from '@tsdotnet/exceptions/dist/ArgumentNullException';
-import ObservableBase from '@tsdotnet/observable-base/dist/ObservableBase';
+import {ArgumentException, ArgumentNullException} from '@tsdotnet/exceptions';
+import {ObservableBase} from '@tsdotnet/observable-base';
 
 /**
  * A timer class that uses an Observable pattern to allow for subscribing to ticks.
