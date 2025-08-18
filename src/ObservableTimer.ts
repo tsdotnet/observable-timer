@@ -12,7 +12,7 @@ import {ObservableBase} from '@tsdotnet/observable-base';
 export default class ObservableTimer
 	extends ObservableBase<number>
 {
-	private _cancel?: () => void;
+	private _cancel: (() => void) | undefined;
 
 	constructor (
 		private _interval: number,
