@@ -50,7 +50,7 @@ class ObservableTimer extends ObservableBase {
     }
     start() {
         const _ = this;
-        _.throwIfDisposed('This timer has been disposed and can\'t be reused.');
+        _.assertIsAlive(true);
         if (!_._cancel && _._count < _._maxCount) {
             if (_._count || _._initialDelay === _._interval) {
                 const i = setInterval(ObservableTimer._onTick, _._interval, _);
