@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@tsdotnet/exceptions": "^1.2.5",
-    "@tsdotnet/observable-base": "^2.0.9",
+    "@tsdotnet/observable-base": "^2.0.10",
     "tslib": "^2.8.1"
   },
   "pnpm": {
