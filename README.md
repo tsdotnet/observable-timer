@@ -1,4 +1,4 @@
-![@tsdotnet/observable-timer: A clock you subscribe to. Interval ticks as an observable.](https://cdn.jsdelivr.net/gh/tsdotnet/observable-timer@master/assets/banner.svg)
+<a href="https://tsdotnet.github.io/observable-timer/"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/observable-timer@master/assets/banner.svg" alt="@tsdotnet/observable-timer: A clock you subscribe to. Interval ticks as an observable."></a>
 
 [![npm version](https://img.shields.io/npm/v/@tsdotnet/observable-timer.svg?style=flat-square)](https://www.npmjs.com/package/@tsdotnet/observable-timer)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tsdotnet/observable-timer/blob/master/LICENSE)
