@@ -1,0 +1,103 @@
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@tsdotnet/exceptions'), require('@tsdotnet/observable-base')) :
+    typeof define === 'function' && define.amd ? define(['exports', '@tsdotnet/exceptions', '@tsdotnet/observable-base'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global.tsdotnet = global.tsdotnet || {}, global.tsdotnet.observableTimer = global.tsdotnet.observableTimer || {}), global.tsdotnet.exceptions, global.tsdotnet.observableBase));
+})(this, (function (exports, exceptions, observableBase) { 'use strict';
+
+    /*!
+     * @author electricessence / https://github.com/electricessence/
+     * @license MIT
+     */
+    class ObservableTimer extends observableBase.ObservableBase {
+        _interval;
+        _maxCount;
+        _initialDelay;
+        _cancel;
+        constructor(_interval, _maxCount = Infinity, _initialDelay = _interval) {
+            super();
+            this._interval = _interval;
+            this._maxCount = _maxCount;
+            this._initialDelay = _initialDelay;
+            if (_interval == null)
+                throw new exceptions.ArgumentNullException('interval', 'Must be a valid number.');
+            if (_interval < 0)
+                throw new exceptions.ArgumentException('interval', 'Cannot be negative.');
+        }
+        _count = 0;
+        get count() {
+            return this._count;
+        }
+        get isRunning() {
+            return !!this._cancel;
+        }
+        static startNew(millisecondInterval, maxCount = Infinity, initialDelay = millisecondInterval) {
+            const t = new ObservableTimer(millisecondInterval, maxCount, initialDelay);
+            t.start();
+            return t;
+        }
+        static _onTick(timer, reInitTimer) {
+            const index = timer._count++, max = timer._maxCount, isComplete = timer._count >= max;
+            if (reInitTimer) {
+                timer.cancel();
+                timer.start();
+            }
+            if (isComplete) {
+                timer.stop();
+            }
+            if (index < max) {
+                timer._onNext(index);
+            }
+            if (isComplete) {
+                timer._onCompleted();
+            }
+        }
+        start() {
+            const _ = this;
+            _.assertIsAlive(true);
+            if (!_._cancel && _._count < _._maxCount) {
+                if (_._count || _._initialDelay === _._interval) {
+                    const i = setInterval(ObservableTimer._onTick, _._interval, _);
+                    _._cancel = () => {
+                        clearInterval(i);
+                    };
+                }
+                else {
+                    const i = setTimeout(ObservableTimer._onTick, _._initialDelay, _, true);
+                    _._cancel = () => {
+                        clearTimeout(i);
+                    };
+                }
+            }
+        }
+        stop() {
+            this.cancel();
+        }
+        reset() {
+            this.stop();
+            this._count = 0;
+        }
+        complete() {
+            this.cancel();
+            this._onCompleted();
+            return this._count;
+        }
+        cancel() {
+            if (this._cancel) {
+                this._cancel();
+                this._cancel = undefined;
+                return true;
+            }
+            return false;
+        }
+        _onDispose() {
+            this.cancel();
+            super._onDispose();
+        }
+    }
+
+    exports.default = ObservableTimer;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+//# sourceMappingURL=observable-timer.js.map
