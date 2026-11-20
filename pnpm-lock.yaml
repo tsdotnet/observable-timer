@@ -38,8 +38,8 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0
       '@tsdotnet/observable-base':
-        specifier: ^2.1.0
-        version: 2.1.0
+        specifier: ^2.1.1
+        version: 2.1.1
       tslib:
         specifier: ^2.9.1
         version: 2.9.1
@@ -714,8 +714,8 @@ packages:
   '@tsdotnet/compare@1.8.0':
     resolution: {integrity: sha512-ENtkaRKgKtRmf8EBSZKIzlSjfQ29SmWBea2h2KmPYl2ldN3cF+QFFXia60wk/OeaEomXDQ3JYHFmAun/lqcWbA==}
 
-  '@tsdotnet/disposable@2.1.0':
-    resolution: {integrity: sha512-Zo/hvGcAhsv4CQhiaUGT/Q6cBDbb5d0KHr0Cz2j9NUCJtKMCCy+sOtq0pn77rm5KoudAjRODv+R6XvWTKcMUDA==}
+  '@tsdotnet/disposable@2.1.1':
+    resolution: {integrity: sha512-GVhMLQPM9GUFZtyIm3YWcKJKjnf0q5yd/V/mNpFiqDbKvWh64uCVU6lirPl6Izb9/LXc2Qgxn86cQxhpDD1ylg==}
 
   '@tsdotnet/exceptions@1.3.0':
     resolution: {integrity: sha512-hL2tCtdlPaEZO/pZ/57DIHMt80Iex3s7ooyH1br/zvGFMB6ms0XzMnBPhzVvgjZjEgGtbtRAsyG6VWjePpY+0w==}
@@ -723,8 +723,8 @@ packages:
   '@tsdotnet/linked-node-list@1.5.0':
     resolution: {integrity: sha512-zNr3+KjbhWeuWMnwPWKvem4yFbCNLET1OD0qdBE5ZwlJ6CCkxJ9E8nSNkf7Tu02hCwUglrj/AgdEAB65jyIdYg==}
 
-  '@tsdotnet/observable-base@2.1.0':
-    resolution: {integrity: sha512-gbfq2aBgPbXPHm2uNM7+mq2pnMxiOlEFEU7muEhO2JSmIrOIsPi0QnnoKAm2R8jb3GVtfSs6dJyvBraBJ1cVVQ==}
+  '@tsdotnet/observable-base@2.1.1':
+    resolution: {integrity: sha512-CKSN3IOQCCKKeIkLO+8vTX77iPDjTdstabnO6JyIpcsqXZiSeyQJpl7eR/c4RCIKWm72tjzmC+8TjS6IOacYug==}
 
   '@tsdotnet/ordered-registry@1.2.0':
     resolution: {integrity: sha512-xtZzjeXIMAY5qxQvzfpkY0h9ntCDd1Ohgcq1J516f3lslDyG1ZMLwuK+5aAICWYKmzWa5AV7hwnr5xCA3wHcyA==}
@@ -2192,7 +2192,7 @@ snapshots:
       '@tsdotnet/type': 1.3.0
       tslib: 2.9.1
 
-  '@tsdotnet/disposable@2.1.0':
+  '@tsdotnet/disposable@2.1.1':
     dependencies:
       tslib: 2.9.1
 
@@ -2207,11 +2207,11 @@ snapshots:
       '@tsdotnet/exceptions': 1.3.0
       tslib: 2.9.1
 
-  '@tsdotnet/observable-base@2.1.0':
+  '@tsdotnet/observable-base@2.1.1':
     dependencies:
       '@tsdotnet/collection-base': 2.2.0
       '@tsdotnet/common-interfaces': 1.0.6
-      '@tsdotnet/disposable': 2.1.0
+      '@tsdotnet/disposable': 2.1.1
       '@tsdotnet/exceptions': 1.3.0
       '@tsdotnet/linked-node-list': 1.5.0
       '@tsdotnet/ordered-registry': 1.2.0
